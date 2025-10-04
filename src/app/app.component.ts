@@ -3,6 +3,8 @@ import { RouterOutlet } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
 import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { fontAwesomeIcons } from './shared/font-awesome-icons';
+import { NavbarComponent } from "./layout/navbar/navbar.component";
+import { FooterComponent } from "./layout/footer/footer.component";
 
 @Component({
   selector: 'app-root',
@@ -10,8 +12,10 @@ import { fontAwesomeIcons } from './shared/font-awesome-icons';
   imports: [
     RouterOutlet,
     ButtonModule,
-    FontAwesomeModule
-  ],
+    FontAwesomeModule,
+    NavbarComponent,
+    FooterComponent
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
